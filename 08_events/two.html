@@ -6,22 +6,21 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Chai aur code</h1>
-    <button id="stop">Stop</button>
+    <h1>Youtube</h1>
+    <button id="stop">STOP</button>
 </body>
 <script>
-    const sayHitesh = function(){
-        console.log("Hitesh");
+    const sayKaran= function(){
+        console.log("karan");
     }
-    const changeText = function(){
-        document.querySelector('h1').innerHTML = "best JS series"
+    const changeText= function(){
+        document.querySelector('h1').innerHTML= "Best JS series"
     }
+    const setMe= setTimeout(changeText,2000)
 
-    const changeMe = setTimeout(changeText, 2000)
-
-    document.querySelector('#stop').addEventListener('click', function(){
-        clearTimeout(changeMe)
-        console.log("STOPPED")
+    document.querySelector('#stop').addEventListener('click',function(e){
+        clearTimeout(setMe)
+        console.log("STOPPED");
     })
 </script>
 </html>
